@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f7f7f7;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  padding: 10px 1.5rem;
+}
+
+.click_logo {
+  float: left;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.textLink {
+  padding: 1.2rem 2rem;
+  float: left;
+  text-align: center;
+  opacity: 0.8;
+}
+.textLink:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .click_logo {
+    text-align: center;
+  }
+
+  .textLink {
+    padding: 0.5rem 1rem;
+  }
+  section {
+    overflow: scroll;
+  }
+}

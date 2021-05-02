@@ -1,0 +1,167 @@
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  height: 3.5rem;
+  padding: 10px 1.5rem;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.click_logo {
+  float: left;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.textLink {
+  padding: 1.2rem 2rem;
+  float: left;
+  text-align: center;
+  opacity: 0.8;
+}
+.textLink:hover {
+  opacity: 1;
+}
+
+.loading {
+  position: relative;
+  top: 19rem;
+  z-index: 100;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+}
+.img {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  right: 50%;
+  margin-right: -25px;
+}
+.ran {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+}
+
+h2 {
+  color: white;
+}
+p {
+  color: white;
+  opacity: 0.9;
+}
+p:hover,
+h2:hover {
+  pointer-events: none;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 40%;
+  overflow: hidden;
+  position: relative;
+}
+
+.side_box {
+  position: absolute;
+  height: 147px;
+  width: 330px;
+  background-image: linear-gradient(to right, #52b4f7, #47bcfc);
+  z-index: 11;
+  top: 0;
+  left: 0;
+  opacity: 0.98;
+}
+.sub_side_box {
+  display: inline-block;
+  margin: 49px 20px;
+  color: white;
+}
+/* Main column */
+.main {
+  flex: 60%;
+  padding-top: 5rem;
+  overflow: hidden;
+}
+.list {
+  width: 100%;
+}
+.list a {
+  padding: 1.5rem 2.3rem;
+  float: right;
+  letter-spacing: 2px;
+  background-color: #fbfbfb;
+}
+.list-link:hover {
+  background-color: white;
+  color: #52b4f7;
+}
+.list-blind {
+  pointer-events: none;
+}
+.uper_img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 164px;
+  z-index: 11;
+  margin-left: 50px;
+  text-shadow: 0px 0px 2px #000000;
+  pointer-events: none;
+}
+.uper_img:hover {
+  pointer-events: none;
+}
+.head {
+  font-size: min(10vh, 10vw);
+  font-family: "Product_sans_bold";
+}
+.desc {
+  font-size: 20px;
+  font-family: "Product_sans";
+  margin-left: 3px;
+}
+@media screen and (max-width: 700px) {
+  .row {
+    position: static;
+    flex-direction: column;
+  }
+  .main {
+    padding-top: 10rem;
+  }
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .click_logo {
+    text-align: center;
+  }
+
+  .textLink {
+    padding: 0.5rem 1rem;
+  }
+  section {
+    overflow: scroll;
+  }
+}

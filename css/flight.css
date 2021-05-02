@@ -1,0 +1,171 @@
+.left-item {
+  background-color: white;
+}
+.commun-item {
+  padding: 4rem 3rem;
+  position: relative;
+  flex: 50%;
+}
+.right-item {
+  background-color: #445eff;
+  border-top-right-radius: 50px;
+}
+
+.top-item {
+  width: 100%;
+  border-bottom: gray solid 1px;
+  padding: 0.5rem 0;
+}
+
+.blueIcon {
+  height: 1.5rem;
+  float: left;
+  margin: 0 1rem 0 0;
+}
+
+.sub-top-item {
+  display: inline-block;
+  width: 40%;
+  padding: 0.3rem 1rem;
+  position: relative;
+  top: 0.6rem;
+  border-bottom: #273cbf solid 3px;
+}
+
+.calendar {
+  position: absolute;
+  height: 40px;
+}
+.op-text {
+  float: left;
+  opacity: 0.5;
+}
+
+.con {
+  display: inline-block;
+  width: 113px;
+  text-align: center;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: white;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #273cbf transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #273cbf transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: #273cbf;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #f4f4f4;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.submit {
+  margin: 1.5rem 0 0 2rem;
+  padding: 0.7rem 2.5rem;
+  border-color: transparent;
+  border-radius: 30px;
+  color: white;
+  background-image: linear-gradient(to left, #273cbf, #2a47fb);
+}
+.submit:hover {
+  background-image: linear-gradient(to left, #2a47fb, #445eff);
+  cursor: pointer;
+}
+
+.button {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 30px;
+  position: absolute;
+  left: 50%;
+  padding: 1rem 1.5rem;
+  transform: translate(-50%, 6rem);
+}
+
+.button:hover {
+  background-color: white;
+  color: #445eff;
+}
+
+@media screen and (max-width: 700px) {
+  .right-item {
+    border-top-right-radius: 0;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .right-item {
+    border-top-right-radius: 0;
+    height: 700px;
+  }
+  #none {
+    position: absolute;
+  }
+  .sub-top-item {
+    width: 50%;
+  }
+  .button {
+    transform: translate(-50%, 3rem);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .left-item {
+    padding: 1rem;
+  }
+  .right-item {
+    padding: 1rem;
+  }
+}

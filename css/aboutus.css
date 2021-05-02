@@ -1,0 +1,155 @@
+.loading {
+  position: relative;
+  top: 19rem;
+  z-index: 100;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+}
+.img {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  right: 50%;
+  margin-right: -25px;
+}
+.ran {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+}
+
+.flex-container {
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0;
+}
+p {
+  font-family: sans-serif;
+}
+.flex-item-left {
+  position: relative;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  position: relative;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-img {
+  position: relative;
+  left: 7%;
+}
+
+.flex-text {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  left: 50%;
+}
+.high {
+  width: 100%;
+  position: relative;
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 11;
+}
+.who-we-are {
+  padding: 4rem 1rem;
+  position: relative;
+  background-color: #1293dd;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 11;
+  box-shadow: 0 -10px 8px 0 rgba(0, 0, 0, 0.2),
+    0 12px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.flex-ft {
+  position: relative;
+  padding: 10px;
+  flex: 33%;
+}
+.flex-sd {
+  position: relative;
+  padding: 10px;
+  flex: 33%;
+}
+.flex-td {
+  position: relative;
+  padding: 10px;
+  flex: 33%;
+}
+.flex-sd *,
+.flex-td *,
+.flex-ft * {
+  margin: 10px 0;
+}
+h1 {
+  color: white;
+}
+.card-text {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  margin-top: 20px;
+  color: white;
+  opacity: 0.8;
+}
+.icon {
+  height: 100px;
+}
+
+.team-container {
+  padding: 2.5rem;
+  padding-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.ft-item {
+  position: relative;
+  padding: 10px;
+  flex: 50%;
+}
+.sd-item {
+  position: relative;
+  padding: 10px;
+  flex: 50%;
+}
+h3 {
+  margin: 1rem;
+}
+@media (max-width: 800px) {
+  .flex-item-right,
+  .flex-item-left,
+  .ft-item,
+  .sd-item,
+  .flex-sd,
+  .flex-td,
+  .flex-ft {
+    flex: 100%;
+  }
+  .flex-item-right {
+    text-align: center;
+  }
+  .flex-img {
+    position: static;
+  }
+  .flex-text {
+    position: static;
+    transform: translate(0, 0);
+    text-align: center;
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 2rem;
+  }
+}

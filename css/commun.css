@@ -1,0 +1,166 @@
+fieldset {
+  border: none;
+}
+
+.text-label {
+  font-family: "Product_sans_bold";
+  color: #463568;
+  position: absolute;
+}
+.text-label + * {
+  margin: 2rem 0;
+}
+.input-form,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 240px;
+  -webkit-transition: border 500ms ease-out;
+  -moz-transition: border 500ms ease-out;
+  -o-transition: border 500ms ease-out;
+  transition: border 500ms ease-out;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 1px solid #273cbf;
+}
+
+.mobile {
+  position: absolute;
+}
+
+#return,
+#departure,
+#checkIn,
+#checkOut {
+  background: url(../img/calendar.png) no-repeat scroll 224px 8px;
+  background-color: white;
+  color: gray;
+}
+.main-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parent-radio-box {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.container {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #273cbf;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 49%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: white;
+  border: blue solid 1px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #273cbf;
+}
+
+#label {
+  margin-right: 4rem;
+}
+
+.adj-container {
+  text-align: center;
+  margin: 2rem;
+  display: inline-block;
+}
+.span {
+  opacity: 0.5;
+  font-size: 12px;
+  color: black;
+}
+
+.operators {
+  height: 20px;
+  width: 20px;
+  float: left;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.operators:active {
+  opacity: 1;
+}
+
+.item1 {
+  position: relative;
+  flex: 5%;
+}
+
+#infant_input,
+#adult_input,
+#child_input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.commun-item {
+  padding: 4rem;
+  position: relative;
+  flex: 50%;
+}
+.op-text {
+  float: left;
+  opacity: 0.5;
+}
+
+.flex50 {
+  position: relative;
+  flex: 50%;
+}
+@media screen and (max-width: 680px) {
+  .mobile {
+    position: static;
+  }
+}

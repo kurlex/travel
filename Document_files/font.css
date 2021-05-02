@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Product_sans";
+  src: url("../product-sans\ \(2\)/Product\ Sans\ Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "Product_sans_bold";
+  src: url("../product-sans\ \(2\)/Product\ Sans\ Bold.ttf") format("truetype");
+}
+
+* {
+  font-family: "Product_sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1e1e1e;
+}
+
+a {
+  text-decoration: none;
+}

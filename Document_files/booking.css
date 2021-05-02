@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "product_sans";
+  src: url("../product_sans/Product\ Sans\ Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "product_sans_bold";
+  src: url("../product_sans/Product\ Sans\ Bold.ttf") format("truetype");
+}
+
+body {
+  background-color: white;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80rem;
+  margin: 0px;
+}
+.grid-container {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin: 20px 0px 0px 25px;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #283dc0;
+  margin: 0px 0px 0px 0px;
+}
+.grid-item {
+  padding: 8px;
+  font-size: 13px;
+  width: 200px;
+  margin: 0px 0px 0px 0px;
+  color: #283dc0;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  grid-column-gap: 10px;
+  margin: 12px;
+}
+
+#aside::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 100%;
+}
+#left {
+  float: left;
+  background: white;
+  width: 40%;
+  padding: 50px;
+  height: 100%;
+}
+.select {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+}
+.button {
+  background-color: #4d7ce2;
+  border-radius: 0.8rem;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 4px;
+  cursor: pointer;
+}
+.form-group {
+  width: 70%;
+  margin: 10px;
+}
+.form-group input[type="text"] {
+  width: 100%;
+  text-align: right;
+}
+.form-group .glyphicon {
+  color: blue;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+}
+.book {
+  border: width 5px;
+  margin: 10px 10px 0px 10px;
+  width: 80px;
+  border: 3px solid #4d7ce2;
+  border-top-style: initial;
+  border-left-style: initial;
+  border-right-style: initial;
+  position: relative;
+  top: 2px;
+}
+hr.new1 {
+  margin: 0px 10px 0px 10px;
+  border-top: 2px solid gray;
+}

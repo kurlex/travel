@@ -41,15 +41,14 @@
             height:100vh;
         }
         .btn{
-            padding:1rem 2rem;
-            color:white;
+            padding: 0.5rem 1rem;
+            color: white;
             background-color: #2fa5ed;
-            position: absolute;
-        left: 50%;
-        transform: translateX(-50%);;
-        border-radius: 7px;
-        font-size: large;
-        letter-spacing: 1px;
+            border-radius: 7px;
+            font-size: inherit;
+            letter-spacing: 1px;
+            border: solid 1px rgba(255,255,255,0.3);
+            cursor: pointer;
         }
         .btn:hover{
             background-color: #1192e3;
@@ -75,6 +74,13 @@
         p , b{
             color:white;
         }
+        .key{
+            margin:1rem;padding: 0.5rem;
+            width: 70%;
+            border-radius: 5px;
+            border: solid 1px rgba(0,0,0,0.2);
+            outline:none;
+        }
     </style>
 
     <section>
@@ -94,11 +100,13 @@
                      <p>Please check the spam section, the email might be there!</p>
                 </div>
             </div>
-
-            <div class="button-div">
-                <a href="../index.php" class="btn">Home Page</a>
+            <div style="text-align: center;">
+                <form action="./confirm.php" method="GET">
+                <input class="key" type="text" name="key" value="" placeholder="Key" autocomplete="off">
+                <div style="display: block;"></div>
+                <button class="btn" type="submit" name="submit" value="submit">submit</button>
+                </form>
             </div>
-
         </div>
     </section>
     

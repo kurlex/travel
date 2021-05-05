@@ -131,7 +131,7 @@ function incrementCounter() {
                             </div>
                             <input type="number" id="numSearch2" name="returnID" value=<?php echo "\"".$_POST['returnID']."\"" ?> style="display:none">
                     </div>
-                <script src="../js/searchBar.js"></script>
+                <script src="../js/searchBarFlight.js"></script>
                 <br class="mobile">
                 <label for="departure" class="text-label">Departure</label>
                 <input class="search" type="date" id="departure" name="departure" placeholder="Select a date" value=<?php echo "\"".$_POST['departure']."\"" ?> required>
@@ -561,7 +561,7 @@ function incrementCounter() {
                 <input name="child" id="child_input" value=<?php echo "\"".$_POST['child']."\"" ?>>
                 <input name="infant" id="infant_input" value=<?php echo "\"".$_POST['infant']."\"" ?> >
                 <input type="text" id="cost" name="cost" value="0">
-                <input type="text" name="class" value="<?php echo $_POST['class'] ?>">
+                <input type="text" name="class" value=<?php echo "\"".$_POST['class']."\"" ?>>
                 <input id="ids" type="text" name="ids" value="-1">
             </div>
             <div class="main-container"  style="text-align: center; border-top:1px solid rgba(0, 0, 0, 0.1);padding:2rem 3rem;">

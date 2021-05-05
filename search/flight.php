@@ -180,7 +180,7 @@
             <a class="button" href="./hotel.php">Reserve a room</a>
         </div>
     </div>
-    <script src="../js/searchBar.js"></script>
+    <script src="../js/searchBarFlight.js"></script>
     <script src="../js/flight.js"></script>
 </body>
 </html>

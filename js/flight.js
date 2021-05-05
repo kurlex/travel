@@ -1,8 +1,8 @@
 var persons = 0;
-if (document.getElementById("radio2").checked) 
+if (document.getElementById("radio2")!=null && document.getElementById("radio2").checked) 
     document.getElementById("radio1").checked ="true"
 
-
+if(document.getElementById("radio1")!=null )
 document.getElementById("radio1").addEventListener("change",()=>{
     if (document.getElementById("radio1").checked) {
         FadeIn("return",30);
@@ -12,6 +12,8 @@ document.getElementById("radio1").addEventListener("change",()=>{
 
     }
 });
+
+if(document.getElementById("radio2")!=null )
 document.getElementById("radio2").addEventListener("change",()=>{
     if (document.getElementById("radio2").checked) {
         FadeOut("return",30);
@@ -21,6 +23,7 @@ document.getElementById("radio2").addEventListener("change",()=>{
     }
 });
 function verif(){
+
   if(persons==0 || parseInt(document.getElementById('adult').innerHTML)==0)
     document.getElementById('num').required = true;
   else

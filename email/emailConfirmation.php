@@ -5,7 +5,6 @@ set_error_handler("var_dump");
 require "../database.php";
 if(isset($_POST['submit']) &&  isset($_POST['firstName']) &&  isset($_POST['surname']) &&  isset($_POST['email']) &&  isset($_POST['cemail']) &&  isset($_POST['ids']) && isset($_POST['cost']) && isset($_POST['infant'])&& isset($_POST['child']) && isset($_POST['adult']) ){
     
-    echo $_POST['ids'];
     $ids = explode("_",$_POST['ids']);
 
     if($_POST['email']!=$_POST['cemail']){

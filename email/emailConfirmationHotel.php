@@ -54,9 +54,6 @@ if( isset($_POST['submit']) &&  isset($_POST['firstName']) &&  isset($_POST['sur
     .$_POST['surname']."\" ,\""
     .$_POST['firstName']."\" , \"".
     $_POST['email']."\");";
-
-
-    echo $sql;
       if(mail($mailTo,$subject,$return,$header) && mysqli_query($con,$sql)){
         require "./emailSent.php";
     }
